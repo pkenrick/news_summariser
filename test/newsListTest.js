@@ -43,7 +43,8 @@ describe('News List', function(){
       newsList.addNewsItem('Man rides horse in Hyde Park', '1/12/2012', 'www.bbc.com/news/manrideshorse', stubbedClass);
       newsList.addNewsItem('Britain to leave EU', '1/7/2013', 'www.bbc.com/news/brexit', stubbedClass);
       newsList.removeNewsItem(1);
-      assert.equals(newsList.newsItemsArray.length, 1);
+      assert.equal(newsList.newsItemsArray.length, 1);
+      assert.equal(newsList.newsItemsArray[0].summaryString, 'Britain to leave EU');
     });
   });
 

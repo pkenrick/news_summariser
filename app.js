@@ -16,3 +16,8 @@ document.getElementById('addNewsItemButton').addEventListener('click', function(
   newsList.addNewsItem(document.getElementById('newSummary').value, document.getElementById('newDate').value, document.getElementById('newUrl').value);
   updateList();
 });
+
+document.getElementById('list').addEventListener('click', function(event){
+  newsList.removeNewsItem(event.target.id.slice(16));
+  updateList();
+});

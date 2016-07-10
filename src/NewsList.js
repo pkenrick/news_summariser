@@ -13,11 +13,11 @@
       this.sortArray();
     },
     display: function(){
-      var returnString = '<ul>';
+      var returnString = "<div id='listContainer'><ul>";
       for(i = 0; i < this.newsItemsArray.length; i++){
-        returnString += ('<li><div>' + this.newsItemsArray[i].summaryString + ': ' + this.dateToString(this.newsItemsArray[i].date) + ': ' + this.newsItemsArray[i].url + '</div></li>')
+        returnString += ("<li><div>" + this.newsItemsArray[i].summaryString + ": " + this.dateToString(this.newsItemsArray[i].date) + ": " + this.newsItemsArray[i].url + " : <input class='removeItemButton' id='removeItemButton" + i + "' type='submit' value='Remove'></input></div></li>")
       }
-      return returnString += '</ul>'
+      return returnString += '</ul></div>'
     },
     dateToString: function(date){
       return (date.getMonth() + 1) + '/' + date.getDate() + '/' +  date.getFullYear();
@@ -27,8 +27,8 @@
         return a.date > b.date ? -1: a.date < b.date ? 1 : 0;
       });
     },
-    removeNewsItem: function(){
-      
+    removeNewsItem: function(index){
+      this.newsItemsArray.splice(index, 1);
     }
   };
 

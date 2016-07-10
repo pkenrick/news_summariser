@@ -1,16 +1,21 @@
 <html>
 <head>
   <title>News Summariser</title>
+  <div id='heading'>News Summariser</div>
+  <link rel='stylesheet' type='text/css' href='/design.css'>
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 </head>
 
+<section id='pageContainer'>
 <form id='addNewsItemForm' action='/newsItems/new' method='post'>
-  <label for='summary'>Summary: </label><input id='newSummary' type='text' name='summary'/>
-  <label for='date'>Date: </label><input id='newDate' type='text' name='date'/>
-  <label for='url'>Url: </label><input id='newUrl' type='text' name='url'/>
+    <label id='date'>Date: </label><input id='newDate' type='text' name='date'/>
+  <label id='url'>Url: </label><input id='newUrl' type='text' name='url'/>
+  <label id='summary'>Summary: </label><textarea id='newSummary' type='text' name='summary'></textarea>
   <input id='addNewsItemButton' type='submit' value='Add News Item'/>
 </form>
 
 <body><div id='list'></div></body>
+</section>
 
 <script src='src/NewsItem.js'></script>
 <script src='src/NewsList.js'></script>

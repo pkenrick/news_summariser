@@ -1,0 +1,65 @@
+body {
+  background-color: orange;
+  font-family: 'Slabo 27px', serif;
+}
+
+#heading {
+  font-size: 30;
+  font-weight: bold;
+  text-align: center;
+}
+
+#pageContainer {
+  /*background-color: black;*/
+  width: 1025px;
+  height: 100%;
+  margin: 20px auto;
+}
+
+#addNewsItemForm {
+  display: inline-block;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width: 500px;
+  margin: 5px 5px;
+  background-color: lightgrey; 
+  float: left;
+}
+
+label#summary {
+  display: block;
+  margin-left: 12px;
+}
+
+label#date, label#url {
+  display: inline-block;
+  margin: 12px;
+}
+
+input#newDate, input#newUrl {
+  display: inline-block;
+  margin:; 12px;
+  width: 180px;
+}
+
+
+#newSummary, #addNewsItemButton {
+  display: block;
+  width: 95%;
+  height: 70px;
+  margin: 10px auto;
+}
+
+#listContainer {
+  display: inline-block;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  width: 500px;
+  margin: 5px 5px;
+  background-color: lightgrey;
+}
+
+
+
