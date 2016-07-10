@@ -1,15 +1,20 @@
-function NewsItem(summaryString, url){
-  this.summaryString = summaryString;
-  this.url = url;
-};
+(function(exports){
 
-NewsItem.prototype = {
-  getSummary: function(){
-    return this.summaryString;
-  },
-  getUrl: function(){
-    return this.url;
-  }
-};
+  function NewsItem(summaryString, date, url){
+    this.summaryString = summaryString;
+    this.date = date;
+    this.url = url;
+  };
 
-module.exports = NewsItem;
+  NewsItem.prototype = {
+    getSummary: function(){
+      return this.summaryString;
+    },
+    getUrl: function(){
+      return this.url;
+    }
+  };
+
+  exports.NewsItem = NewsItem;
+
+})(this);

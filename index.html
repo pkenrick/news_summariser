@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>News Summariser</title>
+</head>
+
+<form id='addNewsItemForm' action='/newsItems/new' method='post'>
+  <label for='summary'>Summary: </label><input id='newSummary' type='text' name='summary'/>
+  <label for='date'>Date: </label><input id='newDate' type='text' name='date'/>
+  <label for='url'>Url: </label><input id='newUrl' type='text' name='url'/>
+  <input id='addNewsItemButton' type='submit' value='Add News Item'/>
+</form>
+
+<body><div id='list'></div></body>
+
+<script src='src/NewsItem.js'></script>
+<script src='src/NewsList.js'></script>
+<script src="app.js"></script>
+</html> 

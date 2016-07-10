@@ -1,12 +1,12 @@
 var assert = require('chai').assert;
-var NewsItem = require('../src/NewsItem.js');
+var NewsItem = require('../src/NewsItem.js').NewsItem;
 
 describe('News Item', function(){
 
   var newsItem;
 
   beforeEach(function(){
-    newsItem = new NewsItem('Man rides horse in Hyde Park', 'www.bbc.com/news/manrideshorse');
+    newsItem = new NewsItem('Man rides horse in Hyde Park', '1/12/2012', 'www.bbc.com/news/manrideshorse');
   });
 
   it('can be instantiated with a url and summary text', function(){
