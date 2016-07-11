@@ -10,7 +10,6 @@ body {
 }
 
 #pageContainer {
-  /*background-color: black;*/
   width: 1025px;
   height: 100%;
   margin: 20px auto;
@@ -25,6 +24,13 @@ body {
   margin: 5px 5px;
   background-color: lightgrey; 
   float: left;
+}
+
+#addNewsTitle {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  margin: 5px;
 }
 
 label#summary {
